@@ -19,163 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-<<<<<<< HEAD
   <!-- STYLE -->
   <link href="css/style.css" rel="stylesheet">
-=======
-  <style>
-    :root{
-      --bg-1:#e6e6e6;
-      --bg-2:#dcdcdc;
-      --text:#252525;
-      --muted:#444;
-
-      --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      --font-title: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-
-    body{
-      font-family: var(--font-body);
-      color: var(--text);
-    }
-
-    a {
-    color: var(--muted);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--muted);
-    text-decoration: underline;
-}
-
-.text-muted {
-  font-size: 12px;
-}
-    /* ================= HERO ================= */
-    .hero{
-      position: relative;
-      min-height: 578px; /* você já tinha ajustado */
-      height: 70vh;
-      overflow: hidden;
-      background: #ddd;
-    }
-
-    /* fundo listrado (como seu span grid) */
-    .hero-bg{
-      position:absolute;
-      inset:0;
-      display:grid;
-      grid-template-columns: repeat(6, 1fr);
-      z-index: 0;
-      pointer-events:none;
-    }
-    .hero-bg span:nth-child(odd){ background: rgba(230,230,230,.65); }
-    .hero-bg span:nth-child(even){ background: rgba(220,220,220,.65); }
-
-    /* slides (somente a imagem troca) */
-    .slides{ position:absolute; inset:0; z-index: 0; }
-    .slide{
-      position:absolute;
-      inset:0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1s ease;
-      transform: scale(1.02);
-    }
-    .slide.active{ opacity: .40; } /* igual seu ajuste */
-
-    /* conteúdo central */
-    .hero-content{
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 24px;
-    }
-    .hero-box{
-      max-width: 860px;
-    }
-    .hero-title{
-      font-family: var(--font-title);
-      font-weight: 800;
-      letter-spacing: .4px;
-      text-transform: uppercase;
-      font-size: clamp(28px, 4vw, 44px);
-      margin: 0 0 12px;
-    }
-    .hero-subtitle{
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 1.6;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    /* seta */
-    .scroll{
-      position:absolute;
-      left: 50%;
-      bottom: 18px;
-      transform: translateX(-50%);
-      z-index: 3;
-      border: 0;
-      background: transparent;
-      cursor: pointer;
-      animation: float 1.5s infinite ease-in-out;
-      padding: 8px 10px;
-    }
-    .scroll .bi{ font-size: 22px; color: #111; }
-    @keyframes float{
-      0%,100%{ transform: translate(-50%, 0); }
-      50%{ transform: translate(-50%, 6px); }
-    }
-
-    /* ================= SEÇÕES ================= */
-    section{ padding: 72px 0; }
-
-    .section-title{
-      font-family: var(--font-title);
-      font-weight: 700;
-      letter-spacing: .2px;
-      color: #034D91;
-    }
-
-    .placeholder-box{
-      background: #e9ecef;
-      min-height: 260px;
-      border-radius: 12px;
-    }
-
-    .card-soft{
-      background: #e9ecef;
-      border: 0;
-      border-radius: 12px;
-      height: 100%;
-    }
-
-
-    .card-title{
-      font-family: var(--font-title);
-      margin-top: 10px;
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: .2px;
-      margin-bottom: 8px;
-    }
-
-    /* reduz animações se o usuário preferir */
-    @media (prefers-reduced-motion: reduce){
-      .slide{ transition: none; }
-      .scroll{ animation: none; }
-    }
-  </style>
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
 </head>
 
 <body>
@@ -183,14 +28,6 @@ a:hover {
   <!-- ================= HERO ================= -->
   <header class="hero">
 
-<<<<<<< HEAD
-=======
-    <div class="hero-bg" aria-hidden="true">
-      <span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-    </div>
-
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
     <div class="slides" aria-hidden="true">
       <div class="slide active" style="background-image:url('img/slide1.jpg')"></div>
       <div class="slide" style="background-image:url('img/slide2.jpg')"></div>
@@ -204,20 +41,11 @@ a:hover {
           Uma modelagem adequada à mediação das práticas pedagógicas
           na EJA/PROEJA da profissionalidade docente
         </p>
-<<<<<<< HEAD
         <button class="scroll" type="button" data-target="#sec1" aria-label="Rolar para baixo">
           <i class="bi bi-arrow-down"></i>
         </button>
       </div>
     </div>
-=======
-      </div>
-    </div>
-
-    <button class="scroll" type="button" data-target="#sec1" aria-label="Rolar para baixo">
-      <i class="bi bi-arrow-down"></i>
-    </button>
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
   </header>
 
   <!-- ================= SEÇÃO 1 ================= -->
@@ -228,15 +56,9 @@ a:hover {
           <h3 class="section-title mb-3">Doutor Edgard Rêgo dos Santos.</h3>
           <p class="mb-0">
             O museu virtual, enquanto produto do fazer pedagógico do projeto de pesquisa, está intimamente ligada ao registro, preservação e divulgação da memória da experiência docente 
-<<<<<<< HEAD
             e discente no passado e presente, como patrimônio dos saberes e da cultura da comunidade escolar.<br><br>
 
             O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, médico e professor da Faculdade de Medicina da Universidade Federal da Bahia (UFBA), e criador e reitor desta mesma universidade.
-=======
-e discente no passado e presente, como patrimônio dos saberes e da cultura da comunidade escolar.<br><br>
-
-O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, médico e professor da Faculdade de Medicina da Universidade Federal da Bahia (UFBA), e criador e reitor desta mesma universidade.
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
           </p>
         </div>
 
@@ -257,11 +79,6 @@ O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, m
   <!-- ================= SEÇÃO 2 ================= -->
   <section id="sec2">
     <div class="container">
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
       <div class="text-center mb-4" data-aos="fade-up" data-aos-duration="800">
         <h3 class="section-title">Cras ac molestie odio.</h3>
         <p class="mx-auto mt-3 mb-0" style="max-width: 760px;">
@@ -303,7 +120,6 @@ O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, m
     </div>
   </section>
 
-<<<<<<< HEAD
   <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
     <div class="container">
@@ -343,8 +159,6 @@ O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, m
   </footer>
 
 
-=======
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -384,9 +198,5 @@ O nome da escola é uma homenagem ao docente e Doutor Edgard Rêgo dos Santos, m
     });
   </script>
 </body>
-<<<<<<< HEAD
 
 </html>
-=======
-</html>
->>>>>>> 59c1ce5c757811f88b599fde203b2ae3d0990741
