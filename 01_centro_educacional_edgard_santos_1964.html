@@ -4,318 +4,267 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Museu Virtual</title>
+  <title>Museu Virtual - CEES</title>
 
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap Icons (opcional, mas útil) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Tipografia (ajuste como quiser) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- STYLE -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ================= HERO ================= -->
-  <header class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-    </div>
+  <header class="header_single">
+    <div class="container header_single_content">
+      <div class="row w-100 align-items-center justify-content-center" data-aos="fade-down" data-aos-duration="800">
 
-    <div class="slides" aria-hidden="true">
-      <div class="slide active" style="background-image:url('img/slide/slide1.jpg')"></div>
-      <div class="slide" style="background-image:url('img/slide/slide2.jpg')"></div>
-      <div class="slide" style="background-image:url('img/slide/slide3.jpg')"></div>
-    </div>
+        <div class="col-auto">
+          <button class="btn btn-outline-dark rounded-3" type="button" onclick="history.back()" aria-label="Voltar">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+        </div>
 
-    <div class="hero-content">
-      <div class="hero-box" data-aos="fade-up" data-aos-duration="800">
-        <h1 class="hero-title">Museu Virtual na Prática Pedagógica</h1>
-        <p class="hero-subtitle">
-          Uma modelagem adequada à mediação das práticas pedagógicas
-          na EJA/PROEJA da profissionalidade docente
-        </p>
-        <button class="scroll" type="button" data-target="#sec1" aria-label="Rolar para baixo">
-          <i class="bi bi-arrow-down"></i>
-        </button>
+        <div class="col text-center">
+          <h1 class="hero-title m-0">Centro Educacional Edgard Santos - 1964</h1>
+        </div>
+
       </div>
     </div>
   </header>
 
-  <!-- ================= SEÇÃO 1 ================= -->
   <section id="sec1">
     <div class="container">
       <div class="row g-4 align-items-start">
         <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="800">
-          <img src="img/gal01/01.jpg" class="img-fluid rounded-4" alt="Foto histórica relacionada ao Edgard Santos">
+          <img src="img/gal01/01.jpg" class="img-fluid rounded-4 shadow-sm" alt="Foto histórica do Governador Lomanto Júnior">
         </div>
 
         <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="800">
-          <h2 class="section-title mb-3">Centro Educacional Edgard Santos - 1964</h2>
-          <p class="mb-0">
-            Da esquerda para direita: Governador Lomanto Júnior - durante o seu governo (1963-1967), o Centro Educacional Edgard Santos foi construído e inaugurado em 07/04/1965
-            <br><br>
-            Este que está de terno branco junto de Boa Morte - de terno preto, bem jovem ainda - nesta foto, é EBERT DE CASTRO. Ele foi um dos responsáveis pela construção do Edgar Santos. Pessoa de grande prestígio no bairro e vereador. (Década de 1960). No centro, de terno branco e junto ao policial, o então governador da Bahia: Antônio Lomanto Júnior.
-            <br><br>
-            No dia 06 de abril de 1964 o governador Lomanto Júnior a pedido do vereador Ebert Castro foi visitar o local, onde funcionava a escola primária Visconde de São Lourenço, apelidada de balança mas não cai de tão velha, era abrigo de moradores de rua. O governador Lomanto Júnior gostou do local e de imediato autorizou a construção do colégio Edgard Santos, onde um ano após foi inaugurado.
-            <br><br>
-            Edgard Santos foi reitor da Universidade Federal da Bahia.
-          </p>
-
-          <div class="mt-4 d-flex gap-2 flex-wrap">
-            <button class="btn btn-outline-dark" type="button" onclick="history.back()">
-              <i class="bi bi-arrow-left"></i> Voltar
-            </button>
-            <!-- <a class="btn btn-dark" href="#sec2">
-              Ver galeria <i class="bi bi-images ms-1"></i>
-            </a> -->
+          <div class="content-box">
+            <p class="mb-3">
+              <strong>Da esquerda para direita:</strong> Governador Lomanto Júnior - durante o seu governo (1963-1967), o Centro Educacional Edgard Santos foi construído e inaugurado em 07/04/1965.
+            </p>
+            <p class="mb-3">
+              Este que está de terno branco junto de Boa Morte - de terno preto, bem jovem ainda - nesta foto, é <strong>EBERT DE CASTRO</strong>. Ele foi um dos responsáveis pela construção do Edgar Santos. Pessoa de grande prestígio no bairro e vereador (Década de 1960). No centro, de terno branco e junto ao policial, o então governador da Bahia: Antônio Lomanto Júnior.
+            </p>
+            <p class="mb-3">
+              No dia 06 de abril de 1964 o governador Lomanto Júnior a pedido do vereador Ebert Castro foi visitar o local, onde funcionava a escola primária Visconde de São Lourenço, apelidada de "balança mas não cai" de tão velha. O governador gostou do local e de imediato autorizou a construção do colégio Edgard Santos.
+            </p>
+            <p class="small text-muted fst-italic">
+              Nota: Edgard Santos foi reitor da Universidade Federal da Bahia.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="text-center mt-4">
-        <button class="scroll position-static translate-middle-x-0" type="button" data-target="#sec2" aria-label="Rolar para a galeria">
+      <div class="text-center mt-5">
+        <button class="scroll" type="button" data-target="#sec2" aria-label="Ir para próxima seção">
           <i class="bi bi-arrow-down"></i>
         </button>
       </div>
     </div>
   </section>
 
-
-  <section id="sec2">
+  <section id="sec2" class="bg-light-soft">
     <div class="container">
-      <div class="row g-4 align-items-start">
+      <div class="row g-4 align-items-center">
 
-        <div class="col-12 col-lg-7" data-aos="fade-right" data-aos-duration="800">
-          <h2 class="section-title mb-3">Transcrição do Decreto Oficial da criação do Centro Edgar Santos Garcia</h2>
-          <p class="mb-0">
-            ESTADOS UNIDOS DO BRASIL ESTADO DA BAHIA
-            ANO SALVADOR, SÁBADO, 30 E DOMINGO, 31 DE MARÇO DE 1963 N. 6.546
-            <br><br>
-            DECRETO N. DE 29 DE MARÇO DE 1963.
-            Declara de utilidade pública para fins de desapropriação um terreno situado à rua Prediliano Pitta, nesta Capital, destinado à construção do “Centro Educacional Edgar Santos.”
-            <br><br>
-            O GOVERNADOR do DO ESTADO DA BAHIA, no uso de suas atribuições.
-            <br><br>
-            D E C R E T A:
-            <br><br>
-            Art.1º - Fica declarado de utilidade pública, para fins de desapropriação, um terreno situado à rua Prediliano Pitta, nesta Capital, medindo de frente, lado norte, 163 30 m. c. (cento e sessenta e três metros e trinta centímetros de comprimento): lado oeste, 110,40 m. c. (cento e dez metros e quarenta centímetros de comprimento), limitando com quem de direito; lado Leste, 127,10 (cento e vinte e sete metros e dez centímetros de comprimento), também limitando com quem de direito; ao sul, limitando com a avenida Garibaldi, 157,90 m. c. (cento e cinquenta e sete metros e noventa centímetros de comprimento), num total de 19.501m² (dezenove mil quinhentos e hum metros e dez centímetros quadrados), tudo conforme planta anexa, terreno êste dito pertencer à Sra. Ursula Catarina, ficando revogados os Decretos n. 17.991. de 19 de abril de 1961. n. 18.656. de 20 de julho de 1961 e o de n. 18.215 de 29 de Novembro de 1961.
-            <br><br>
-            Artigo 2º - O Secretário da Educação promoverá em nome do Estado, a desapropriação do citado terreno, por valor não superior a 18 milhões de Cruzeiros, (Cr$ 18.000.000,00) usando, para esse fim, verbas orçamentárias específicas ou, através da CEREB recursos do programa de construções escolares do Estado.
-            <br><br>
-            Artigo 3º - O terreno a que se refere esta desapropriação será destinado à construção do “Centro Educacional Edgar Santos”, conforme projeto aprovado pela Comissão Executiva da Rede Escolar da Bahia.
-            <br><br>
-            Palácio do Governo do Estado da Bahia, em 29 de março de 1963.
-            (Ass.) JURACY MAGALHÃES - FELIPE NERY - ADEMAR MARTINELI BRAGA - RAYMUNDO MATA - EDGARD PIRES DA VEIGA - FRANCISCO TRINDADE - ORLANDO G. TEIXEIRA - ARMANDO VIANA DE CASTRO - MANOEL EVANGELISTA DE BRITO.
-          </p>
+        <div class="col-12 col-lg-7 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+          <h2 class="section-title mb-4">Transcrição do Decreto Oficial da criação do Centro Edgar Santos Garcia</h2>
 
-          <div class="mt-4 d-flex gap-2 flex-wrap">
-            <button class="btn btn-outline-dark" type="button" onclick="history.back()">
-              <i class="bi bi-arrow-left"></i> Voltar
-            </button>
-            <!-- <a class="btn btn-dark" href="#sec2">
-              Ver galeria <i class="bi bi-images ms-1"></i>
-            </a> -->
+          <div class="card-soft p-4">
+            <div class="d-flex justify-content-between flex-wrap mb-3 border-bottom pb-2">
+              <p class="small text-uppercase text-muted mb-0">Estados Unidos do Brasil • Estado da Bahia</p>
+              <p class="small text-muted mb-0">Salvador, 30 e 31 de Março de 1963 • N. 6.546</p>
+            </div>
+
+            <h5 class="mb-4 font-monospace text-center fw-bold text-uppercase" style="color: var(--primary-blue);">
+              Decreto de 29 de Março de 1963
+            </h5>
+
+            <p class="mb-4 fst-italic ps-3 border-start border-3 border-secondary bg-light py-2 pe-2 rounded-end">
+              "Declara de utilidade pública para fins de desapropriação um terreno situado à rua Prediliano Pitta, nesta Capital, destinado à construção do Centro Educacional Edgar Santos."
+            </p>
+
+            <p class="mb-3">
+              <strong>O GOVERNADOR DO ESTADO DA BAHIA</strong>, no uso de suas atribuições, <strong>DECRETA:</strong>
+            </p>
+
+            <div class="decree-content" style="text-align: justify;">
+              <p class="mb-3">
+                <strong>Art. 1º</strong> - Fica declarado de utilidade pública, para fins de desapropriação, um terreno situado à rua Prediliano Pitta, nesta Capital, medindo de frente, lado norte, 163,30 m.c. (cento e sessenta e três metros e trinta centímetros de comprimento): lado oeste, 110,40 m.c. (cento e dez metros e quarenta centímetros de comprimento), limitando com quem de direito; lado Leste, 127,10 m (cento e vinte e sete metros e dez centímetros de comprimento), também limitando com quem de direito; ao sul, limitando com a avenida Garibaldi, 157,90 m.c. (cento e cinquenta e sete metros e noventa centímetros de comprimento), num total de 19.501m² (dezenove mil quinhentos e hum metros e dez centímetros quadrados), tudo conforme planta anexa, terreno êste dito pertencer à Sra. Ursula Catarina, ficando revogados os Decretos n. 17.991 de 19 de abril de 1961, n. 18.656 de 20 de julho de 1961 e o de n. 18.215 de 29 de Novembro de 1961.
+              </p>
+
+              <p class="mb-3">
+                <strong>Art. 2º</strong> - O Secretário da Educação promoverá em nome do Estado, a desapropriação do citado terreno, por valor não superior a 18 milhões de Cruzeiros (Cr$ 18.000.000,00) usando, para esse fim, verbas orçamentárias específicas ou, através da CEREB, recursos do programa de construções escolares do Estado.
+              </p>
+
+              <p class="mb-4">
+                <strong>Art. 3º</strong> - O terreno a que se refere esta desapropriação será destinado à construção do “Centro Educacional Edgar Santos”, conforme projeto aprovado pela Comissão Executiva da Rede Escolar da Bahia.
+              </p>
+            </div>
+
+            <div class="mt-5 pt-3 border-top text-end">
+              <p class="mb-1 fst-italic">Palácio do Governo do Estado da Bahia, em 29 de março de 1963.</p>
+              <p class="fw-bold mb-0 mt-3">JURACY MAGALHÃES</p>
+              <p class="small text-muted mb-3">Governador</p>
+
+              <p class="small text-muted" style="font-size: 0.75rem;">
+                Felipe Nery • Ademar Martineli Braga • Raymundo Mata • Edgard Pires da Veiga • Francisco Trindade • Orlando G. Teixeira • Armando Viana de Castro • Manoel Evangelista de Brito.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-duration="800">
-          <img src="img/gal01/08.jpg" class="img-fluid rounded-4" alt="Foto histórica relacionada ao Edgard Santos">
+        <div class="col-12 col-lg-5 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="800">
+          <img src="img/gal01/08.jpg" class="img-fluid rounded-4 shadow-sm" alt="Foto do documento oficial">
+          <p class="text-center text-muted small mt-2">Fac-símile do Diário Oficial</p>
         </div>
       </div>
 
-      <div class="text-center mt-4">
-        <button class="scroll position-static translate-middle-x-0" type="button" data-target="#sec3" aria-label="Rolar para a galeria">
+      <div class="text-center mt-5">
+        <button class="scroll" type="button" data-target="#sec3" aria-label="Ir para galeria">
           <i class="bi bi-arrow-down"></i>
         </button>
       </div>
     </div>
   </section>
 
-  <!-- ================= SEÇÃO 2 (GALERIA MASONRY) ================= -->
   <section id="sec3">
     <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
-        <h2 class="section-title mb-3">Galeria</h2>
-        <p class="mx-auto mb-0" style="max-width: 860px;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit orci, porta sed felis in, porta laoreet risus.
-          Ut sed nunc quis massa lacinia varius. Maecenas ornare laoreet nisl. Nullam posuere placerat sem, at mattis risus.
-          Integer vel nunc vel erat mattis sodales. Vestibulum in lectus id justo ultrices mattis.
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title mb-3">Galeria Histórica</h2>
+        <p class="mx-auto text-muted" style="max-width: 700px;">
+          Registros visuais que contam a trajetória da instituição, seus fundadores, alunos e momentos marcantes.
         </p>
       </div>
 
-      <!-- Masonry -->
       <div class="gallery-masonry" data-aos="fade-up" data-aos-duration="800">
 
         <div class="gallery-item">
-          <img src="img/gal01/02.jpg" class="gallery-img" alt="Foto 01" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/02.jpg" data-caption="Acima, Professor Everaldo Cecilio da Boa Morte com alunas do curso do Magistério (antigo curso pedagógico), funcionou no Edgard Santos, desde sua fundação até por volta de 1973 — sempre no vespertino.">
+          <img src="img/gal01/02.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/02.jpg" data-caption="Prof. Everaldo Boa Morte com alunas do curso do Magistério.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/03.jpg" class="gallery-img" alt="Foto 02" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/03.jpg" data-caption="Professor Everaldo Cecilio da Boa Morte formou em 1960, começou a lecionar no Edgard Santos em 1965 e se aposentou em 1992 foi Professor de matemática - durante muitos anos; vice-diretor do noturno; e diretor do 2º grau ( 1977/ 1978 ).">
+          <img src="img/gal01/03.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/03.jpg" data-caption="Desfile Cívico: A banda marcial em destaque.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/04.jpg" class="gallery-img" alt="Foto 03" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/04.jpg" data-caption="Professor Everaldo Cecilio da Boa Morte formou em 1960, começou a lecionar no Edgard Santos em 1965 e se aposentou em 1992 foi Professor de matemática - durante muitos anos; vice-diretor do noturno; e diretor do 2º grau ( 1977/ 1978 ).">
+          <img src="img/gal01/04.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/04.jpg" data-caption="Prof. Everaldo, figura central na direção do noturno e 2º grau.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/05.jpg" class="gallery-img" alt="Foto 04" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/05.jpg" data-caption="Siomara Vitorino Gomes da Silva sucessora do primeiro diretor.">
+          <img src="img/gal01/05.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/05.jpg" data-caption="Siomara Vitorino Gomes da Silva, sucessora na direção.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/06.jpg" class="gallery-img" alt="Foto 05" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/06.jpg" data-caption="Eliane Checcucci.">
+          <img src="img/gal01/06.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/06.jpg" data-caption="Eliane Checcucci, parte do corpo docente histórico.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/07.jpg" class="gallery-img" alt="Foto 06" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/07.jpg" data-caption="Professor Jomar Leite Carvalho primeiro diretor Geral do Centro Educacional Edgar Santos. Desde a sua fundação em 07 de abril de 1965 até março de 1971.">
+          <img src="img/gal01/07.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/07.jpg" data-caption="Prof. Jomar Leite Carvalho, primeiro diretor Geral (1965-1971).">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/08.jpg" class="gallery-img" alt="Foto 07" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/08.jpg" data-caption="Diário Oficial da criação do Centro Edgar Santos Garcia.">
+          <img src="img/gal01/09.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/09.jpg" data-caption="Placa de inauguração do ginásio e laboratórios (1975).">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/09.jpg" class="gallery-img" alt="Foto 08" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/09.jpg" data-caption="Placa de inauguração do ginásio de esportes, oficinas e laboratórios construídos e inaugurados no governo do Dr. Antônio Carlos Magalhães, secretário de educação e  cultura, Dr. Kleber Pacheco de Oliveira em fevereiro de 1975.">
+          <img src="img/gal01/10.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/10.jpg" data-caption="Flâmula original do Centro Educacional Edgar Santos.">
         </div>
 
         <div class="gallery-item">
-          <img src="img/gal01/10.jpg" class="gallery-img" alt="Foto 09" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/10.jpg" data-caption="Flâmula do Centro Educacional Edgar Santos.">
-        </div>
-
-        <div class="gallery-item">
-          <img src="img/gal01/11.jpg" class="gallery-img" alt="Foto 10" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/11.jpg" data-caption="Talabarte de tecido resistente que passa pelo ombro e cruza o peito do porta-bandeira servindo para encaixar a haste (o mastro) da flâmula.">
+          <img src="img/gal01/11.jpg" class="gallery-img" loading="lazy" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-full="img/gal01/11.jpg" data-caption="Talabarte do porta-bandeira.">
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ================= LIGHTBOX MODAL ================= -->
   <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-      <div class="modal-content bg-dark text-white">
-
+      <div class="modal-content bg-dark text-white border-0">
         <div class="modal-header border-0 pb-0">
           <div class="me-auto small opacity-75" id="lightboxCounter"></div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
-
-        <div class="modal-body pt-2">
-          <div class="text-center">
-            <img id="lightboxImage" src="" class="img-fluid" alt="">
-            <p id="lightboxCaption" class="small opacity-75 mt-3 mb-0"></p>
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mt-4">
-            <button type="button" class="btn btn-outline-light btn-sm" id="btnPrev">
-              <i class="bi bi-chevron-left"></i> Anterior
-            </button>
-            <button type="button" class="btn btn-outline-light btn-sm" id="btnNext">
-              Próxima <i class="bi bi-chevron-right"></i>
-            </button>
+        <div class="modal-body pt-2 text-center">
+          <img id="lightboxImage" src="" class="img-fluid" style="max-height: 80vh;" alt="">
+          <p id="lightboxCaption" class="mt-3 mb-0 text-light opacity-75"></p>
+          <div class="d-flex justify-content-center gap-3 mt-4">
+            <button type="button" class="btn btn-outline-light btn-sm px-4" id="btnPrev"><i class="bi bi-chevron-left"></i></button>
+            <button type="button" class="btn btn-outline-light btn-sm px-4" id="btnNext"><i class="bi bi-chevron-right"></i></button>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
     <div class="container">
       <div class="row g-4">
-        <!-- Coluna 1: Sobre -->
         <div class="col-12 col-md-4">
-          <h5>Museu Virtual</h5>
-          <p>
+          <h5 class="fw-bold mb-3">Museu Virtual CEES</h5>
+          <p class="text-muted small">
             Resgate da memória e patrimônio cultural escolar. Uma iniciativa pedagógica focada na EJA/PROEJA e na profissionalidade docente.
           </p>
         </div>
-
-        <!-- Coluna 2: Navegação -->
         <div class="col-12 col-md-4">
-          <h5>Navegação</h5>
-          <ul class="list-unstyled d-flex flex-column gap-2">
-            <li><a href="index.php">Início</a></li>
-            <li><a href="sec_01.php">História & Contexto</a></li>
-            <li><a href="sec_01.php#sec2">Galeria de Fotos</a></li>
+          <h5 class="fw-bold mb-3">Navegação</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.php" class="text-decoration-none text-muted">Início</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">História & Contexto</a></li>
+            <li><a href="#sec3" class="text-decoration-none text-muted">Galeria de Fotos</a></li>
           </ul>
         </div>
-
-        <!-- Coluna 3: Créditos -->
         <div class="col-12 col-md-4">
-          <h5>Realização</h5>
-          <p class="mb-2">Centro Educacional Edgard Santos</p>
-          <p class="mb-0">Pesquisa e Desenvolvimento:<br>Equipe Pedagógica EJA/PROEJA</p>
+          <h5 class="fw-bold mb-3">Realização</h5>
+          <p class="text-muted small mb-0">Centro Educacional Edgard Santos<br>Equipe Pedagógica EJA/PROEJA</p>
         </div>
       </div>
-
-      <hr class="my-4 border-secondary opacity-25">
-
-      <div class="text-center small pb-4">
-        <p class="mb-0">&copy; 2026 Museu Virtual. Todos os direitos reservados.</p>
+      <hr class="my-4 opacity-25">
+      <div class="text-center small text-muted pb-4">
+        &copy; 2026 Museu Virtual. Todos os direitos reservados.
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
   <script>
-    // ================= AOS =================
-    AOS.init({
-      once: true,
-      offset: 80,
-      duration: 700,
-      easing: 'ease-out'
-    });
+    // Inicialização AOS
+    AOS.init({ once: true, offset: 60, duration: 800 });
 
-    // ================= HERO SLIDER (fade) =================
-    (function () {
-      const slides = document.querySelectorAll('.slide');
-      let i = 0;
-      if (slides.length <= 1) return;
-
-      setInterval(() => {
-        slides[i].classList.remove('active');
-        i = (i + 1) % slides.length;
-        slides[i].classList.add('active');
-      }, 5000);
-    })();
-
-    // ================= SCROLL SUAVE (setas) =================
+    // Scroll Suave
     document.querySelectorAll('.scroll[data-target]').forEach((btn) => {
       btn.addEventListener('click', () => {
         const target = document.querySelector(btn.dataset.target);
-        if (!target) return;
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (target) {
+          // Ajuste do offset por causa do Header Sticky
+          const headerOffset = 100;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        }
       });
     });
 
-    // ================= LIGHTBOX (galeria) =================
+    // Lightbox Logic
     (function () {
       const modalEl = document.getElementById('lightboxModal');
       const imgEl = document.getElementById('lightboxImage');
       const capEl = document.getElementById('lightboxCaption');
       const counterEl = document.getElementById('lightboxCounter');
-
       const btnPrev = document.getElementById('btnPrev');
       const btnNext = document.getElementById('btnNext');
-
       const thumbs = Array.from(document.querySelectorAll('.gallery-img'));
       let currentIndex = -1;
 
@@ -323,33 +272,26 @@
         if (!thumbs.length) return;
         if (index < 0) index = thumbs.length - 1;
         if (index >= thumbs.length) index = 0;
-
         currentIndex = index;
         const t = thumbs[currentIndex];
-
         imgEl.src = t.dataset.full || t.src;
-        imgEl.alt = t.alt || '';
         capEl.textContent = t.dataset.caption || '';
-        counterEl.textContent = `Imagem ${currentIndex + 1} de ${thumbs.length}`;
+        counterEl.textContent = `${currentIndex + 1} / ${thumbs.length}`;
       }
 
       thumbs.forEach((t, idx) => t.addEventListener('click', () => openByIndex(idx)));
-
       btnPrev.addEventListener('click', () => openByIndex(currentIndex - 1));
       btnNext.addEventListener('click', () => openByIndex(currentIndex + 1));
 
+      // Navegação por teclado
       document.addEventListener('keydown', (e) => {
-        const isOpen = modalEl.classList.contains('show');
-        if (!isOpen) return;
-
+        if (!modalEl.classList.contains('show')) return;
         if (e.key === 'ArrowLeft') btnPrev.click();
         if (e.key === 'ArrowRight') btnNext.click();
       });
 
       modalEl.addEventListener('hidden.bs.modal', () => {
         imgEl.src = '';
-        capEl.textContent = '';
-        counterEl.textContent = '';
         currentIndex = -1;
       });
     })();
