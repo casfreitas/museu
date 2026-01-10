@@ -89,8 +89,8 @@ a:hover {
 .hero-box {
   max-width: 900px;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -136,12 +136,12 @@ a:hover {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: var(--header-bg);
-  background: linear-gradient(
+  background: #fff;
+  /* background: linear-gradient(
     180deg,
     rgba(230, 228, 218, 1) 0%,
     rgba(255, 255, 255, 0.95) 100%
-  );
+  ); */
   backdrop-filter: blur(5px); /* Efeito moderno de vidro */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   padding: 20px 0; /* Padding padrão */
@@ -211,43 +211,60 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-/* ================= GALERIA MASONRY ================= */
+/* ================= GALERIA GRID (6 Colunas) ================= */
 .gallery-masonry {
-  column-count: 4; /* Desktop */
-  column-gap: 1.5rem;
+  display: grid;
+  /* Aqui está a mágica: 6 colunas de frações iguais (1fr) */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem; /* Espaço entre as fotos */
 }
 
 .gallery-item {
-  break-inside: avoid;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .gallery-img {
   width: 100%;
-  border-radius: 8px;
+  /* Como são 6 colunas, as fotos ficam mais estreitas. 
+     Reduzi a altura para 160px para manter uma proporção bonita */
+  height: 160px;
+  object-fit: cover; /* Corta o excesso para preencher o quadrado */
+  border-radius: 6px;
   cursor: zoom-in;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #eee; /* Placeholder cor */
+  background: #eee;
 }
 
 .gallery-img:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2; /* Garante que a sombra fique sobre os outros */
 }
 
+/* ================= RESPONSIVIDADE (Obrigatório para 6 colunas) ================= */
+
+/* Quando a tela for menor que 1400px (Laptops normais), muda para 4 colunas */
+@media (max-width: 1400px) {
+  .gallery-masonry {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Quando a tela for menor que 992px (Tablets), muda para 3 colunas */
 @media (max-width: 992px) {
   .gallery-masonry {
-    column-count: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 768px) {
+
+/* Quando a tela for menor que 576px (Celulares), muda para 2 colunas */
+@media (max-width: 576px) {
   .gallery-masonry {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; /* Menos espaço no celular */
   }
-}
-@media (max-width: 500px) {
-  .gallery-masonry {
-    column-count: 1;
+  .gallery-img {
+    height: 140px; /* Um pouco menor no celular */
   }
 }
 
