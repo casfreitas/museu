@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museu Virtual - Início</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="slides" aria-hidden="true">
+      <div class="slide active" style="background-image:url('img/slide/slide1.jpg')"></div>
+      <div class="slide" style="background-image:url('img/slide/slide2.jpg')"></div>
+      <div class="slide" style="background-image:url('img/slide/slide3.jpg')"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-box" data-aos="fade-up" data-aos-duration="800">
+        <h1 class="hero-title">Museu Virtual na Prática Pedagógica</h1>
+        <p class="hero-subtitle">
+          Uma modelagem adequada à mediação das práticas pedagógicas
+          na EJA/PROEJA da profissionalidade docente
+        </p>
+        <button class="scroll" type="button" data-target="#sec1" aria-label="Rolar para baixo">
+          <i class="bi bi-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="sec1">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-12 col-lg-7" data-aos="fade-right" data-aos-duration="800">
+          <h3 class="section-title mb-4">Doutor Edgard Rêgo dos Santos</h3>
+          <div class="content-box">
+            <p class="mb-3">
+              O museu virtual, enquanto produto do fazer pedagógico do projeto de pesquisa, está intimamente ligado ao registro, preservação e divulgação da memória da experiência docente e discente no passado e presente, como patrimônio dos saberes e da cultura da comunidade escolar.
+            </p>
+            <p class="mb-0">
+              O nome da escola é uma homenagem ao docente e <strong>Doutor Edgard Rêgo dos Santos</strong>, médico e professor da Faculdade de Medicina da Universidade Federal da Bahia (UFBA), e criador e reitor desta mesma universidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-duration="800">
+          <figure class="m-0">
+            <img src="img/image 5.png" class="img-fluid rounded-4 shadow-sm" alt="Retrato desenhado de Edgard Santos">
+            <figcaption class="text-muted small mt-2 text-center fst-italic">
+              Fonte: Quadro em grafite de autoria de Iara Endraos, 1970.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button class="scroll position-static translate-middle-x-0" type="button" data-target="#sec-video" aria-label="Ir para o vídeo">
+          <i class="bi bi-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-video" class="py-4">
+    <div class="container">
+      <div class="row g-0 rounded-4 overflow-hidden shadow-lg">
+
+        <div class="col-lg-6 bg-theme-dark d-flex flex-column justify-content-center p-5" data-aos="fade-right">
+          <div>
+            <h3 class="fw-bold text-uppercase mb-3 text-white">Conheça nossa História</h3>
+            <p class="mb-4 text-white opacity-75 lead" style="font-size: 1rem;">
+              Nem sempre o registro escrito é suficiente para capturar a essência do nosso museu.
+              Através da tecnologia, trazemos relatos vivos e imagens históricas.
+              Assista ao nosso vídeo institucional e mergulhe um pouco na história do Centro Educacional Edgard Santos.
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <button class="btn btn-outline-light rounded-circle p-2" type="button" id="btn-next-sec" data-target="#sec2" style="width: 45px; height: 45px;">
+              <i class="bi bi-arrow-down"></i>
+            </button>
+            <span class="ms-2 text-white small opacity-50">Continuar lendo</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 position-relative video-cover d-flex align-items-center justify-content-center" data-aos="fade-left">
+          <div class="video-overlay"></div>
+
+          <button type="button" class="btn-play-pulse" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Assistir Vídeo">
+            <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-black">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btgit statusn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <video controls id="meuVideoLocal">
+              <source src="videos/video_historia.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição de vídeos.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sec2" class="bg-light-soft">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+        <h3 class="section-title mb-3">A Memória do Centro Educacional Edgard Santos</h3>
+        <p class="mx-auto text-muted" style="max-width: 760px;">
+          O museu virtual do fazer pedagógico e cotidiano da escola, constitui-se registros virtuais da experiência docente e discente enquanto seres históricos produtores de saberes e da cultura escolar. A profissionalidade docente, mediada pelo uso de interfaces digitais, na era da informação constituem um espaço de registro e disseminação da memória escolar.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="650">
+          <a href="01_centro_educacional_edgard_santos_1964.html" class="text-decoration-none">
+            <div class="card card-hover h-100 shadow-sm">
+              <img src="img/gal01/01.jpg" class="card-img-top" alt="Capa do álbum 1964">
+              <div class="card-body text-center">
+                <h6 class="card-title text-dark fw-bold text-uppercase small m-0">Centro Educacional Edgard Santos - 1964</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="100">
+          <a href="02.html" class="text-decoration-none">
+            <div class="card card-hover h-100 shadow-sm">
+              <img src="img/gal02/96.jpg" class="card-img-top" alt="Centro Educacional Edgard Santos 1979-1980">
+              <div class="card-body text-center">
+                <h6 class="card-title text-dark fw-bold text-uppercase small m-0">Centro Educacional Edgard Santos 1979-1980</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="200">
+          <a href="03.html" class="text-decoration-none">
+            <div class="card card-hover h-100 shadow-sm">
+              <img src="img/gal03/2018_azilo_sao_jose_foto7.jpg" class="card-img-top" alt="Centro Educacional Edgard Santos 2012">
+              <div class="card-body text-center">
+                <h6 class="card-title text-dark fw-bold text-uppercase small m-0">Centro Educacional Edgard Santos - 2012-2025</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="650" data-aos-delay="200">
+          <a href="04.html" class="text-decoration-none">
+            <div class="card card-hover h-100 shadow-sm">
+              <img src="img/gal04/37.jpg" class="card-img-top" alt="CENTRO EDUCACIONAL EDGARD SANTOS 2025">
+              <div class="card-body text-center">
+                <h6 class="card-title text-dark fw-bold text-uppercase small m-0">CENTRO EDUCACIONAL EDGARD SANTOS 2025</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="text-center mt-5">
+          <button class="scroll position-static translate-middle-x-0" type="button" data-target="#sec3" aria-label="Ir para o vídeo">
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sec3" class="bg-light-soft">
+    <!-- Seção de Vídeos -->
+    <div class="row mt-5" data-aos="fade-up" data-aos-duration="800">
+      <div class="col-12 text-center mb-4">
+        <h3 class="section-title fs-4">História em movimento</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="ratio ratio-16x9 bg-dark shadow-sm rounded overflow-hidden">
+            <video controls prel oad="metadata">
+              <source src="img/historia_movimento.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição de vídeos.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <button class="scroll position-static translate-middle-x-0" type="button" data-target="#sec4" aria-label="Ir para o vídeo">
+        <i class="bi bi-arrow-down"></i>
+      </button>
+    </div>
+
+  </section>
+
+
+
+
+  <section class="testimonials-section" id="sec4">
+
+
+    <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+      <h3 class="section-title mb-3">DEPOIMENTOS</h3>
+      <p class="mx-auto text-muted" style="max-width: 760px;">
+        O museu virtual do fazer pedagógico e cotidiano da escola constitui-se de registros virtuais da experiência de quem viveu e ajudou a construir a nossa história ao longo de todos esses anos.
+      </p>
+    </div>
+
+    <div class="carousel-wrapper position-relative" data-aos="fade-up" data-aos-duration="800">
+      <button class="carousel-btn prev-btn btn btn-dark position-absolute top-50 start-0 translate-middle-y rounded-circle ms-2 shadow" style="z-index: 10;">&#8592;</button>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track d-flex">
+
+          <div class="carousel-slide flex-shrink-0 w-100 px-4">
+            <div class="testimonial-item">
+              <img src="img/depoimento/01.png" alt="Osmundo Pascoal Veloso" class="testimonial-img">
+              <strong>Osmundo Pascoal Veloso</strong>
+              <div class="testimonial-text">
+                <p>"Osmundo Pascoal Veloso, filho de Estelito dos Reis Veloso e Anília dos Santos Veloso, nasceu em Salvador, Bahia. Aos 10 anos incompletos, concluiu o Curso Primário na Escola Visconde São Lourenço, situado no bairro da Fazenda Garcia.
+                  Diplomou-se em Letras pela Faculdade Católica, lecionou em vários colégios de Salvador, sendo o último, o Centro Educacional Edgard Santos, por onde se aposentou.
+                  "</p>
+
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <img src="img/depoimento/02.png" alt="Roquelina Boa Morte" class="testimonial-img">
+              <strong>Roquelina Boa Morte</strong>
+              <div class="testimonial-text">
+                <p>"Eu entrei no Edgard Santos, em 1970 /1974 como aluna da 5a 8 série. Retornei em 05. de abril 1978, como funcionária para trabalhar na secretaria/ assistente administrativo. Desempenhando o trabalho de arquivista, atendimento ao discente e público, confeccionando histórico, atestado, diploma, matrícula, quando estava no módulo 5 na faculdade ministrei aulas manhã e noite na 5a, 6a e 7a. série . Casei em 1984, tive uma filha em 1987, ingressei na faculdade em 1988 em letras vernáculas com francês. Ainda na faculdade, 1991 fiz o curso de secretária no colégio central, a carga horária de 08;00 horas. Tranquei a faculdade.
+                  Continuei trabalhando mas no turno noturno, quem cuidava de minha filha na minha ausência, era uma irmã. Após o curso 1991, ocupei o cargo de secretária da unidade escolar Edgard Santos, em 1992, trabalhava nos três turnos, em uma carga horária de 40 horas semanais. Dentro da escola participava de vários eventos ; feiras reuniões, concursos... , supletivo de 1 e 2 grau, trabalhei por muitos anos como fiscal de concursos, hoje faço coordenação de concursos. Trabalhei de 1978 a 2025 ( 1992 a 2002 como secretária, retornei 2012, novamente como secretária) e me aposentei em 2025"</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide flex-shrink-0 w-100 px-4">
+            <div class="testimonial-item">
+              <img src="img/depoimento/03.png" alt="Ebert Castro" class="testimonial-img">
+              <strong>Ebert Castro</strong>
+              <div class="testimonial-text">
+                <p>"Nasci em Salvador no ano de 1917, filho de Antônio Teófilo e Geminiana, e carreguei comigo o orgulho de ser um construtor de caminhos. Comecei na alfaiataria seguindo os passos de meu pai, mas foi na construção civil e na vida pública que encontrei minha verdadeira vocação entre as décadas de 50 e 80. A Fazenda Garcia sempre foi a menina dos meus olhos e dediquei meu suor para tirar aquela comunidade do barro e levá-la ao asfalto, lutando pela construção de ladeiras, da Praça Marquês de Olinda e pela reforma da nossa Igreja de Nossa Senhora de Lourdes. Minha missão sempre foi valorizar a cidadania e o pertencimento, transformando o manifesto da Mudança do Garcia em um símbolo de dignidade reconhecido internacionalmente. Fiz questão de que todos os meus filhos tivessem educação e formação para a vida. Sempre fui um amigo leal e sem vícios, mas confesso que a decepção após a perda da Venerança foi o que realmente pesou em meu coração e acelerou minha partida em 1988. Mesmo assim, jamais joguei a toalha e permaneci firme como construtor até o fim, deixando para Salvador uma história de amor e política que agora vive nas páginas do livro a ser publicado: Ebert Castro por Salvador Uma História de Amor e Política."</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <img src="img/depoimento/04.jpg" alt="Professor Everaldo Cecílio da Boa Morte" class="testimonial-img">
+              <strong>Professor Everaldo Cecílio da Boa Morte</strong>
+              <div class="testimonial-text">
+                <p>"Professor Everaldo Cecílio da Boa Morte, formado em 1960, começou a lecionar no Edgard Santos em 1965 e se aposentou em 1992 foi Professor de matemática - durante muitos anos; vice-diretor do noturno; e diretor do 2º grau ( 1977/ 1978 )."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide flex-shrink-0 w-100 px-4">
+            <div class="testimonial-item">
+              <img src="img/depoimento/05.png" alt="Professora Lúcia Soares Mascarenhas" class="testimonial-img">
+              <strong>Professora Lúcia Soares Mascarenhas</strong>
+              <div class="testimonial-text">
+                <p>"A professora Lúcia Soares Mascarenhas atuou no Centro Educacional Edgard Santos como professora de jogral, música e teatro, desenvolvendo um trabalho marcante na formação cultural e artística dos estudantes. Seu compromisso com a educação ia além das atividades em sala de aula: ela dedicava-se a incentivar a participação dos alunos em diversas atividades culturais, muitas delas idealizadas, organizadas e conduzidas por ela própria. Ao longo de sua trajetória na escola, promoveu apresentações, eventos e projetos que envolveram não apenas os estudantes, mas também a comunidade escolar, fortalecendo os vínculos entre escola e comunidade por meio da arte, da música e do teatro. Sua atuação deixou memórias significativas entre professores, alunos e todos que tiveram a oportunidade de participar de suas iniciativas. A professora Lúcia também representava, em sua prática pedagógica, a amorosidade e os pressupostos freirianos, compreendendo a educação como um espaço de diálogo, sensibilidade e transformação."</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <img src="img/depoimento/06.png" alt="Professora Dora" class="testimonial-img">
+              <strong>Professora Dora (Maria Auxiliadora Gomes Barroso)</strong>
+              <div class="testimonial-text">
+                <p>"Formada em Letras e movida pelo compromisso inabalável com a educação, Maria Auxiliadora Gomes Barroso — a nossa eterna Professora Dora — iniciou sua jornada na rede pública em 1970. Após a aprovação em concurso público estadual, seus primeiros passos foram marcados pela dinâmica da época, lecionando inicialmente no Colégio Costa e Silva (que funcionava no Colégio Militar dos Dendezeiros). Contudo, no mesmo ano, através das aulas extras, foi que Dora encontrou seu destino definitivo: o Centro Educacional Edgard Santos. A transferência para a unidade não foi apenas uma conveniência logística por morar no Garcia; foi o encontro de uma educadora com a sua comunidade. Ali, Dora pôde exercer o magistério em sua plenitude, transformando a proximidade geográfica em um vínculo profundo de pertencimento. A trajetória de Dora no Edgard Santos, entre 1970 e 1996, foi pautada pelo esmero e pela busca constante por qualificação. Sua competência profissional e sua capacidade de diálogo a levaram a funções de destaque dentro da unidade. Antes mesmo das grandes mudanças estruturais no país, ela já coordenava o projeto 'Escola e Comunidade', atuava como coordenadora da Área de Comunicação, eleita por voto direto, antecipando a visão de que a educação não se faz isolada entre quatro paredes. Com o amadurecimento democrático após o período militar, Dora viu sua liderança ser referendada pelos pares. Foi eleita por voto direto a Vice-Direção do turno noturno. Essas conquistas não eram meros cargos, mas o reconhecimento de uma profissional que sabia ouvir e agregar. Falar da Professora Dora é falar de resistência e afeto. Em uma escola de bairro no coração de Salvador, ela enfrentou os desafios intrínsecos à educação pública com uma postura propositiva. Sua marca registrada sempre foi a amorosidade, utilizada como ferramenta de uma pedagogia libertadora, inclusiva e equitativa. Mesmo décadas após sua atuação, o eco de seu trabalho permanece vivo. O reconhecimento que recebe hoje de ex-alunos, colegas e da comunidade do Garcia é o maior testemunho de sua passagem pelo Centro Educacional Edgard Santos profundamente humana. Dora não apenas ensinou letras; ela ajudou a escrever histórias de dignidade na educação baiana."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="carousel-btn next-btn btn btn-dark position-absolute top-50 end-0 translate-middle-y rounded-circle me-2 shadow" style="z-index: 10;">&#8594;</button>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3">Museu Virtual CEES</h5>
+          <p class="text-muted small">
+            Resgate da memória e patrimônio cultural escolar.<br>Uma pesquisa de desenvolvimento de âmbito social e educacional.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3">Navegação</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+            <li><a href="index.html#sec1" class="text-decoration-none text-muted">Doutor Edgard Rêgo dos Santos</a></li>
+            <li><a href="index.html#sec-video" class="text-decoration-none text-muted">Conheça nossa História</a></li>
+            <li><a href="index.html#sec2" class="text-decoration-none text-muted">A Memória do Centro Educacional Edgard Santos</a></li>
+            <li><a href="index.html#sec4" class="text-decoration-none text-muted">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold mb-3">Realização</h5>
+          <p class="text-muted small mb-0">• Pesquisadora, docentes e discentes do Centro Educacional Edgard Santos.<br>• Desenvolvedor André Freitas<br>• Programa de Pós-graduação em Educação de Jovens e Adultos - Mestrado Profissional - UNEB</p>
+        </div>
+      </div>
+
+      <hr class="my-4 opacity-25">
+
+      <div class="text-center small text-muted pb-4">
+        &copy; 2026 Museu Virtual. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // Inicialização do AOS
+    AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out' });
+
+    // Slider da Home
+    (function () {
+      const slides = document.querySelectorAll('.slide');
+      let i = 0;
+      if (slides.length <= 1) return;
+      setInterval(() => {
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('active');
+      }, 5000);
+    })();
+
+    // Scroll Suave (Agora funciona para todos os botões com data-target)
+    document.querySelectorAll('[data-target]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = document.querySelector(btn.dataset.target);
+        if (target) {
+          // Ajuste de offset para não ficar escondido pelo header se for fixo (opcional)
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Lógica do Vídeo Modal
+    const videoModalElement = document.getElementById('videoModal');
+    const videoElement = document.getElementById('meuVideoLocal');
+
+    // 1. Quando o modal terminar de abrir -> DAR PLAY
+    videoModalElement.addEventListener('shown.bs.modal', () => {
+      if (videoElement) {
+        videoElement.play();
+      }
+    });
+
+    // 2. Quando o modal fechar -> PAUSAR e REINICIAR
+    videoModalElement.addEventListener('hidden.bs.modal', () => {
+      if (videoElement) {
+        videoElement.pause();
+        videoElement.currentTime = 0; // Volta para o início
+      }
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector('.carousel-track');
+      const wrapper = document.querySelector('.carousel-wrapper');
+
+      if (!track || !wrapper) return;
+
+      const nextButton = document.querySelector('.next-btn');
+      const prevButton = document.querySelector('.prev-btn');
+      let autoPlayInterval;
+      let isTransitioning = false;
+
+      // --- ROLAR PARA A DIREITA ---
+      function moveToNextSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
+        track.style.transition = 'transform 0.6s ease-in-out';
+        track.style.transform = `translateX(-100%)`;
+
+        track.addEventListener('transitionend', function handler(e) {
+          if (e.propertyName !== 'transform') return;
+          track.removeEventListener('transitionend', handler);
+
+          track.style.transition = 'none';
+          track.appendChild(track.firstElementChild);
+          track.style.transform = `translateX(0)`;
+
+          void track.offsetWidth;
+          isTransitioning = false;
+        });
+      }
+
+      // --- ROLAR PARA A ESQUERDA ---
+      function moveToPrevSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
+        const lastSlide = track.lastElementChild;
+        track.prepend(lastSlide);
+
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-100%)`;
+
+        void track.offsetWidth;
+
+        track.style.transition = 'transform 0.6s ease-in-out';
+        track.style.transform = `translateX(0)`;
+
+        track.addEventListener('transitionend', function handler(e) {
+          if (e.propertyName !== 'transform') return;
+          track.removeEventListener('transitionend', handler);
+          isTransitioning = false;
+        });
+      }
+
+      // --- CONTROLES DE AUTOPLAY (A MÁGICA DA PAUSA ESTÁ AQUI) ---
+      function startAutoPlay() {
+        // 1. LIMPA qualquer intervalo perdido antes de criar um novo (Evita intervalos fantasmas)
+        clearInterval(autoPlayInterval);
+        // 2. Inicia o loop de 8 segundos
+        autoPlayInterval = setInterval(moveToNextSlide, 8000);
+      }
+
+      function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+      }
+
+      // --- EVENTOS DOS BOTÕES ---
+      if (nextButton) {
+        nextButton.addEventListener('click', () => {
+          moveToNextSlide();
+          startAutoPlay(); // Reseta o timer para não passar de novo logo em seguida
+        });
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener('click', () => {
+          moveToPrevSlide();
+          startAutoPlay();
+        });
+      }
+
+      // --- EVENTOS DE PAUSA (MOUSE E TOUCH) ---
+      // Para computadores (Mouse)
+      wrapper.addEventListener('mouseenter', stopAutoPlay);
+      wrapper.addEventListener('mouseleave', startAutoPlay);
+
+      // Para celulares (Toque na tela ao tentar rolar o texto longo)
+      wrapper.addEventListener('touchstart', stopAutoPlay, { passive: true });
+      wrapper.addEventListener('touchend', startAutoPlay, { passive: true });
+
+      // Inicia o carrossel pela primeira vez
+      setTimeout(startAutoPlay, 150);
+    });
+  </script>
+</body>
+
+</html>
